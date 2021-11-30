@@ -6,6 +6,10 @@ const port = process.env.PORT || 5000;
 
 const UserRouter =require('./api/User')
 
+const cors = require('cors')
+
+app.use(cors());
+
 // const bodyParser = require('express').json;
 app.use(express.json());
 
